@@ -1,3 +1,8 @@
 #paginaAtual {
-    outline: 5vw solid red;
+   /* Home */
+    position: absolute;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+/* identical to box height */
 }
