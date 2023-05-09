@@ -28,7 +28,7 @@ main{
     border-radius: 100px 0px 100px 0px;
 }
 .forms h2{
-    color: #B93939;
+    color: #ffffff;
     font-size: 5.5rem;
 }
 .forms div{
@@ -41,9 +41,12 @@ main{
     margin: 15px;
     background-color: #2E6B29;
     border: none;
-    color: white;
-    border-bottom: 1px solid white;
+    color: #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
+input::placeholder {
+    color: #ffffff;
+  }
 
 .forms button{
     width: 80%;
