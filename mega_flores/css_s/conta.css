@@ -10,7 +10,7 @@ main{
 
 .forms{
     background-color: #2E6B29;
-    width: 62vh;
+    width: 30rem;
     height: 80vh;
     margin: 20px;
     padding: 20px;
@@ -29,7 +29,7 @@ main{
 }
 .forms h2{
     color: #ffffff;
-    font-size: 5.5rem;
+    font-size: 4rem;
 }
 .forms div{
     display: flex;
@@ -45,6 +45,7 @@ main{
     border: none;
     color: #ffffff;
     border-bottom: 1px solid #ffffff;
+    font-size: 1.5rem;
 }
 input::placeholder {
     color: #ffffff;

@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     border-radius: 0vh 0vh 20vh 0vh;
+    margin-top: 121px;
 }
 .section1 .text{
     display: flex;

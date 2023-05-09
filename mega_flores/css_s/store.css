@@ -1,0 +1,41 @@
+main{
+    margin-top: 150px;
+}
+
+h1 {
+    height: 95vh;
+    display: flex;
+    align-items: left;
+    justify-content: top;
+    padding-left: 30px;
+    margin-bottom: 690px;
+   
+    color: #B93939;
+}
+
+
+h2 {
+
+}
+.produtos {
+    display: flex;
+    justify-content: column;
+    padding: 30px;
+    align-items: center;
+}
+
+.linha {
+    display: flex;
+    justify-content: row;
+    align-items: center;
+    padding: 30px;
+}
+
+.flor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 33%; 
+    padding: 10px;
+}
