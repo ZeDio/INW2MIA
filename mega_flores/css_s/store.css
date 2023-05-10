@@ -3,30 +3,24 @@ main{
 }
 
 h1 {
-    height: 95vh;
     display: flex;
     align-items: left;
     justify-content: top;
     padding-left: 30px;
-    margin-bottom: 690px;
    
     color: #B93939;
 }
 
-
-h2 {
-
-}
 .produtos {
     display: flex;
-    justify-content: column;
+    justify-content: center;
+    flex-direction: column;
     padding: 30px;
-    align-items: center;
 }
 
 .linha {
     display: flex;
-    justify-content: row;
+    justify-content: center;
     align-items: center;
     padding: 30px;
 }
@@ -38,4 +32,9 @@ h2 {
     align-items: center;
     width: 33%; 
     padding: 10px;
+    margin: 30px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 20rem;
 }
+
