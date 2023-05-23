@@ -4,19 +4,22 @@
     "id": 1,
     "descricao": "Rosa",
     "estoque": 10,
-    "valor": 10
+    "valor": 10,
+    "img":"./img/1.jpg"
     },
     {
     "id": 2,
     "descricao": "Girassol",
     "estoque": 10,
-    "valor": 15
+    "valor": 15,
+    "img":"./img/2.jpg"
     },
     {
     "id": 3,
     "descricao": "Lirios",
     "estoque": 10,
-    "valor": 5.25
+    "valor": 5.25,
+    "img":"./img/3.jpg"
     }
     ]
 }

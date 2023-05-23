@@ -1,3 +1,4 @@
+//npx json-server --watch db.json
 const url = 'http://localhost:3000/produtos'
 fetch(url)
     .then((req) => req.json())
@@ -6,7 +7,7 @@ fetch(url)
 function mostraProdutos(produtos){
     const htmlProdutos = produtos.map(
         (produto) =>`
-        <img src=${produto.imagem} width=100 height=100><br>
+        <img src=${produto.img} width=100 height=100><br>
         <h2>${produto.descricao}</h2>
         <h4>Valor : ${produto.valor}</h4>`
     );
