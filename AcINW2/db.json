@@ -1,0 +1,25 @@
+{
+    "produtos": [
+    {
+    "id": 1,
+    "descricao": "The Last Ofus Part 1",
+    "estoque": 10,
+    "valor": 10,
+    "img":"https://images-americanas.b2w.io/produtos/5833874301/imagens/jogo-the-last-of-us-parte-1-remake-ps5-midia-fisica/5833874335_1_large.jpg"
+    },
+    {
+    "id": 2,
+    "descricao": "Hogwarts Legacy",
+    "estoque": 10,
+    "valor": 15,
+    "img":"https://images-americanas.b2w.io/produtos/7207773641/imagens/jogo-hogwarts-legacy-ps5-fisico-lacrado-pronta/7207773676_1_large.jpg"
+    },
+    {
+    "id": 3,
+    "descricao": "FIFA 23",
+    "estoque": 10,
+    "valor": 5.25,
+    "img":"https://images-americanas.b2w.io/produtos/01/00/img/5547500/2/5547500228_1GG.jpg"
+    }
+    ]
+}

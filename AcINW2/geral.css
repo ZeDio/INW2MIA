@@ -1,0 +1,60 @@
+.ini{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.ini h1{
+    font-size: 68px;
+}
+.ini p{
+    font-size: 16px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.oioi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 40px;
+}
+.oioi h1{
+    font-size: 68px;
+}
+.ini h1{
+    font-size: 68px;
+}
+.ini p{
+    font-size: 16px;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+.arru{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+.oi{
+    text-align: center;
+    margin: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+    width: 200px;
+    height: 200px;
+}
+.oi h2{
+    font-size: 32px;
+}
+
+footer{
+    margin-top: 100px;
+}
