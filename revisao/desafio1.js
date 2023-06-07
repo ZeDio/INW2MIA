@@ -1,4 +1,4 @@
-//npm install prompt-sync
+//npm install prompt-sync   ou    npm i prompt-sync
 
 // console.log("oi \n \n mundo")
 
