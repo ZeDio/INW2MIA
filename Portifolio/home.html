@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+</head>
+
+<style>
+body{
+    width: 98%;
+    height: 100%;
+    color: white;
+    background-color: #191919;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+section{
+    margin-bottom: 20px;
+}
+
+.one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.one h1{
+    font-size: 50px;
+}
+.img{
+    width: 250px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(imgs/Mancha-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: 250px;
+}
+.modificado{
+    font-size: 24px;
+    font-weight: 600;
+}
+.box-text{
+    width: 45%;
+}
+
+.two{
+    background-color: white;
+    width: 100%;
+    margin-right: 2px;
+    margin-left: 2px;
+    color: #191919;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 15px;
+    padding: 2px;
+}
+.two img{
+    border-radius: 20px;
+    height: 350px;
+    width: 500px;
+}
+.two h2{
+    font-size: 30px;
+}
+</style>
+<body>
+    
+    <main>
+        <section class="one">
+            <div class="box-text">
+                <h1>José Diogo</h1>
+                <p class="modificado">Designer & Progamador</p>
+                <p>Bom, eu me chamo José Diogo, tenho 16 anos, tenho experiência em um restaurante próximo à escola como garçom e balconistas.
+                    Estudo na FIAP School desde 2013, e agora estou no 2 ano do técnico da Fiap School.
+                    Tenho um pouco de experiência com Front e Back End. HTML5 / CSS / JS / MONGO DB / SQL SEVER
+                    Gostaria muito de atuar na área de TI, por conta do desafios lógicos e no web design com a opinião pública.</p>
+            </div>
+            <div class="img">
+                <img src="imgs/mi.png" alt="Eu" style="height: 200px; width:200px; border-radius: 100%; border: 5px white solid;">
+            </div>
+        </section>
+
+        <section class="two">
+            <img class="img" src="imgs/Floricultura.PNG" alt="Projeto">
+            <div class="box-text">
+                <h2>Projeto Floricultura</h2>
+                <p>Projeto desemvolvido em sala para testar conhecimentos e aprender conceitos HTML, CSS, JS.. Envolvendo Figma, Visual Studio Code.</p>
+            </div>
+        </section>
+
+        <section class="two">
+            <img class="img" src="imgs/Bank.PNG" alt="Projeto">
+            <div class="box-text">
+                <h2>Projeto Bank</h2>
+                <p>Projeto desemvolvido em sala para testar conhecimentos e aprender conceitos Js. Esse projeto foi baseado em um fucionamento de banco.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
