@@ -3,7 +3,7 @@
     height: 150px;
     background-color: rgba(117,117,117,1);
     border-radius: 100%;
-    position: absolute;
+    position: fixed;
     left: 100px;
     top: 200px;
     animation: animação-fundo1 4s ease-in-out infinite;
@@ -13,7 +13,7 @@
     height: 100px;
     background-color: rgba(117,117,117,1);
     border-radius: 100%;
-    position: absolute;
+    position: fixed;
     right: 100px;
     bottom: 200px;
     animation: animação-fundo2 6s ease-in-out infinite;
@@ -21,35 +21,32 @@
 @keyframes animação-fundo2 {
     0%{
         filter: blur(160px);
-        right: 100px;
-        bottom: 200px;
     }
     50%{
         filter: blur(80px);
-        right: 90px;
+        transform: translateX(10px);
+        transform: translateY(-10px);
         bottom: 210px;
     }
     100%{
         filter: blur(160px);
-        right: 100px;
-        bottom: 200px;
+        transform: translateX(-10px);
+        transform: translateY(10px);
     }
 }
 @keyframes animação-fundo1 {
     0%{
         filter: blur(140px);
-        left: 100px;
-        top: 200px; 
     }
     50%{
         filter: blur(120px);
-        left: 110px;
-        top: 210px;
+        transform: translateX(10px);
+        transform: translateY(-10px);
     }
     100%{
         filter: blur(140px);
-        left: 100px;
-        top: 200px;
+        transform: translateX(-10px);
+        transform: translateY(10px);
     }
 }
 

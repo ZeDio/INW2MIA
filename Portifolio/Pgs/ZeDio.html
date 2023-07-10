@@ -12,6 +12,7 @@
 html, body{
     width: 100%;
     height: 100%;
+    scroll-behavior: smooth;
 }
 body{
     width: 100%;
@@ -24,6 +25,52 @@ body{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+}
+
+header{
+    width: 350px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 30px;
+    border: 3px solid white;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 20px;
+}
+header img{
+    width: 60px;
+    transition: 0.3s linear;
+}
+header img:hover{
+    width: 65px;
+    filter: blur(2px);
+    filter: drop-shadow(6px 4px 6px white);
+}
+
+section{
+    width: 99%;
+    background-color: rgba(19,19,19,1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.section1{
+    height: 99%;
+    margin-top: 0.5%;
+}
+.section2{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 64px;
 }
 
 .digitando{
@@ -52,20 +99,6 @@ body{
         to{
             border-right-color: transparent;
         }
-}
-.section1{
-    margin-top: 0.5%;
-}
-section{
-    width: 99%;
-    height: 99%;
-    background-color: rgba(19,19,19,1);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-top: 20px;
-    padding-bottom: 20px;
 }
 .Mi{
     width: 350px;
@@ -122,6 +155,34 @@ p{
     font-size: 16px;
 }
 
+.Mi2{
+    width: 255px;
+    height: 255px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(13,13,13);
+    background: linear-gradient(90deg, rgba(19,19,19,1) 2%, rgba(117,117,117,1) 52%, rgba(255,255,255,1) 100%);
+    border-radius: 74% 26% 75% 25% / 30% 86% 14% 70% ;
+    filter: blur(0.2px);
+    transition: 0.5s linear;
+    margin: 20px;
+    margin-top: 40px;
+    animation: mi-animado 3s ease-in-out infinite;
+}
+.Mi2:hover{
+    width: 245px;
+    height: 245px;
+}
+.metade{
+    width: 375px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
 footer{
     position: relative;
     margin-bottom: 10px;
@@ -139,12 +200,18 @@ footer{
 }
 </style>
 <body>
+    <header>
+        <a href="#Mi"><img src="../Imgs/Pessoa.png" alt="#"></a>
+        <a href="#Informacoes"><img src="../Imgs/Informacoes.png" alt="#"></a>
+        <a href="#"><img src="../Imgs/trabalhos.png" alt="#"></a>
+    </header>
+
     <div class="fundo-bolha1"></div>
     <div class="fundo-bolha2"></div>
 
-    <section class="section1">
+    <section class="section1" id="Mi">
         <div class="Mi">
-            <img src="../imgs/mi.png" alt="Ze Dio" style="width: 450px; border-radius: 75% 25% 72% 28% / 30% 51% 49% 70%;">
+            <img src="../Imgs/mi.png" alt="Ze Dio" style="width: 450px; border-radius: 75% 25% 72% 28% / 30% 51% 49% 70%;">
         </div>
         <div class="text">
             <div class="titulo">
@@ -158,8 +225,32 @@ footer{
             Estudo na FIAP School desde 2013, e agora estou no 2 ano do técnico da Fiap School.</p>
         </div>
     </section>
-    <section class="section2">
-        
+
+    <section class="section2" id="Informacoes">
+        <div class="metade">
+            <div style="width: 100%; display: flex;
+            align-items: center; justify-content: center; flex-direction: column;">
+                <h1>Oque Eu Faço?</h1>
+                <p>- Sou um desenvolvedor Front-End e Back-End. Também sou um analista de banco de dados.. </p>
+            </div>
+            <div class="Mi2">
+                <img src="../Imgs/mi2.png" alt="Ze Dio" style="width: 230px; border-radius: 74% 26% 75% 25% / 30% 86% 14% 70% ;">
+            </div>
+        </div>
+        <div class="metade">
+            <div class="organizar-2">
+                <h2>UI/UX Desing</h2>
+                <p>text</p>
+            </div>
+            <div class="organizar-2">
+                <h2>Digital Marketing</h2>
+                <p>text</p>
+            </div>
+            <div class="organizar-2">
+                <h2>Progamador Full Stack</h2>
+                <p>text</p>
+            </div>
+        </div>
     </section>
 
     <footer>
@@ -168,7 +259,14 @@ footer{
         <div class="wave wave3"></div>
         <div class="wave wave4"></div>
 
-        <h1 class="h1 digitando">Ze Dio</h1>
+        <h1 class="h1 digitando">Ze Dio <small>Contato</small></h1>
+        <div>
+            <a href="#"><img src="" alt="Instagram"></a>
+            <a href="#"><img src="" alt="Youtube"></a>
+            <a href="#"><img src="" alt="Linedin"></a>
+            <a href="#"><img src="" alt="GitHub"></a>
+            <a href="#"><img src="" alt="WhastzApp"></a>
+        </div>
     </footer>
     
 </body>
