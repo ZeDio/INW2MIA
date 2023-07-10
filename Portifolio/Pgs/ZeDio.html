@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifolio</title>
+    <link rel="stylesheet" href="../Css/reset.css">
+    <link rel="stylesheet" href="../Css/cssPeculiar.css">
+    <link rel="stylesheet" href="../Css/cssGeral.css">
+</head>
+<style>
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.digitando{
+        color: rgb(255, 255, 255);
+        border-right: 2px solid rgb(255, 255, 255);
+        animation: pisca 0.5s infinite normal, digit 3s steps(15) 0.8s normal infinite;
+        white-space: nowrap;
+        overflow: hidden;
+        font-style: italic;
+}
+@keyframes digit {
+        0%{
+            width: 0;
+        }
+        50%{
+            width: 200px;
+        }
+        100%{
+            width: 0px;
+        }
+}
+@keyframes pisca {
+        fron{
+            border-right-color: rgb(255, 255, 255);
+        }
+        to{
+            border-right-color: transparent;
+        }
+}
+.section1{
+    margin-top: 0.5%;
+}
+section{
+    width: 99%;
+    height: 99%;
+    background-color: rgba(19,19,19,1);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.Mi{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(13,13,13);
+    background: linear-gradient(90deg, rgba(19,19,19,1) 2%, rgba(117,117,117,1) 52%, rgba(255,255,255,1) 100%);
+    border-radius: 75% 25% 72% 28% / 30% 51% 49% 70%;
+    filter: blur(0.2px);
+    transition: 0.5s linear;
+    margin: 20px;
+    animation: mi-animado 3s ease-in-out infinite;
+}
+.Mi:hover{
+    width: 340px;
+    height: 340px;
+}
+@keyframes mi-animado {
+    0%{
+        transform: translateX(-5px);
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateX(5px);
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateX(-5px);
+        transform: translateY(-5px);
+    }
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    width: 50vh;
+    display: flex;
+    justify-content: space-around ;
+}
+.titulo{
+    margin-bottom: 40px;
+}
+h1{
+    font-size: 48px;
+    font-weight: bolder;
+    font-style: italic;
+}
+small{
+    font-size: 8px;
+}
+p{
+    font-size: 16px;
+}
+
+footer{
+    position: relative;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.h1{
+    color: rgba(19,19,19,1);
+}
+</style>
+<body>
+    <div class="fundo-bolha1"></div>
+    <div class="fundo-bolha2"></div>
+
+    <section class="section1">
+        <div class="Mi">
+            <img src="../imgs/mi.png" alt="Ze Dio" style="width: 450px; border-radius: 75% 25% 72% 28% / 30% 51% 49% 70%;">
+        </div>
+        <div class="text">
+            <div class="titulo">
+                <h1>José Diogo <small>Ze Dio</small></h1>
+                <h1>Sou Um..</h1>
+                <p class="digitando"> -Progamador Front End</p>
+                <p class="digitando"> -Progamador Back End</p>
+                <p class="digitando"> -Designer</p>
+            </div>
+            <p>-Bom, eu me chamo José Diogo, tenho 16 anos, tenho experiência em um restaurante próximo à escola como garçom e balconistas.
+            Estudo na FIAP School desde 2013, e agora estou no 2 ano do técnico da Fiap School.</p>
+        </div>
+    </section>
+    <section class="section2">
+        
+    </section>
+
+    <footer>
+        <div class="wave wave1"></div>
+        <div class="wave wave2"></div>
+        <div class="wave wave3"></div>
+        <div class="wave wave4"></div>
+
+        <h1 class="h1 digitando">Ze Dio</h1>
+    </footer>
+    
+</body>
+</html>
