@@ -50,6 +50,9 @@
     }
 }
 
+.Mi, .Mi2, .header{
+    visibility: hidden;
+}
 
 .wave{
     position: absolute;
