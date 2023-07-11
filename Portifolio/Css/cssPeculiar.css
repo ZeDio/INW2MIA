@@ -57,7 +57,7 @@
     left: 0;
     width: 100%;
     height: 100px;
-    background: url(../imgs/wave.png);
+    background: url(../imgs/Footer/wave.png);
     background-size: 1000px 100px;
     filter: blur(4px);
 }

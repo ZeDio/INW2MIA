@@ -27,13 +27,12 @@ body{
     flex-wrap: wrap;
 }
 
-header{
+.header{
     width: 350px;
     height: 75px;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    text-align: center;
     border-radius: 30px;
     border: 3px solid white;
     background: transparent;
@@ -41,11 +40,11 @@ header{
     position: fixed;
     top: 20px;
 }
-header img{
+.header img{
     width: 60px;
     transition: 0.3s linear;
 }
-header img:hover{
+.header img:hover{
     width: 65px;
     filter: blur(2px);
     filter: drop-shadow(6px 4px 6px white);
@@ -71,6 +70,9 @@ section{
     align-items: center;
     justify-content: space-around;
     padding-top: 64px;
+}
+.section3{
+    height: 99%;
 }
 
 .digitando{
@@ -167,8 +169,9 @@ p{
     filter: blur(0.2px);
     transition: 0.5s linear;
     margin: 20px;
-    margin-top: 40px;
-    animation: mi-animado 3s ease-in-out infinite;
+    margin-top: 140px;
+    opacity: 0.3;
+    animation: mi-animado 10s ease-in-out infinite;
 }
 .Mi2:hover{
     width: 245px;
@@ -181,6 +184,81 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    position: relative;
+    margin-bottom: 30px;
+}
+.metade-2{
+    width: 375px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+}
+.organizar-2{
+    width: 100%;
+    height: 130px;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 32px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+p{
+    margin-left: 10px;
+}
+.bloquinho{
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+    border-radius: 10px;
+    border: 3px solid white;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    width: 110px;
+    height: 28px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.bloquinho:hover{
+    filter: drop-shadow(2px 2px 2px white);
+}
+.bloquinho:active{
+    height: 70px;
+}
+.bloquinho-linguagens{
+    margin-top: 10px;
+    position: absolute;
+    right: 10px;
+    border-radius: 10px;
+    border: 3px solid white;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    width: 150px;
+    height: 28px;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+}
+.bloquinho-linguagens:hover{
+    height: 160px;
+}
+h3{
+    font-size: 24px;
+    font-style: italic;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.bloquinho p{
+    margin-bottom: 5px;
+}
+.bloquinho-linguagens p{
+    margin-bottom: 5px;
 }
 
 footer{
@@ -194,24 +272,53 @@ footer{
     justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
+    flex-wrap: wrap;
 }
 .h1{
     color: rgba(19,19,19,1);
 }
+footer small{
+    font-size: 16px;
+}
+footer 
+.imgs-contato{
+    width: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: 0.3s ease-in-out;
+}
+.imgs-contato:hover{
+    width: 45px;
+    filter: drop-shadow(4px 4px 4px black);
+}
+.digitando-footer{
+        color: rgba(19,19,19,1);
+        border-right: 2px solid rgba(19,19,19,1);
+        animation: pisca 0.5s infinite normal, digit-footer 3s steps(15) 0.8s normal infinite;
+        white-space: nowrap;
+        overflow: hidden;
+        font-style: italic;
+}
+@keyframes digit-footer {
+        0%{
+            width: 0;
+        }
+        50%{
+            width: 235px;
+        }
+        100%{
+            width: 0px;
+        }
+}
 </style>
 <body>
-    <header>
-        <a href="#Mi"><img src="../Imgs/Pessoa.png" alt="#"></a>
-        <a href="#Informacoes"><img src="../Imgs/Informacoes.png" alt="#"></a>
-        <a href="#"><img src="../Imgs/trabalhos.png" alt="#"></a>
-    </header>
 
     <div class="fundo-bolha1"></div>
     <div class="fundo-bolha2"></div>
 
     <section class="section1" id="Mi">
         <div class="Mi">
-            <img src="../Imgs/mi.png" alt="Ze Dio" style="width: 450px; border-radius: 75% 25% 72% 28% / 30% 51% 49% 70%;">
+            <img src="../Imgs/MinhasFotos/mi.png" alt="Ze Dio" style="width: 450px; border-radius: 75% 25% 72% 28% / 30% 51% 49% 70%;">
         </div>
         <div class="text">
             <div class="titulo">
@@ -227,31 +334,58 @@ footer{
     </section>
 
     <section class="section2" id="Informacoes">
-        <div class="metade">
+        <div class="metade-2">
             <div style="width: 100%; display: flex;
             align-items: center; justify-content: center; flex-direction: column;">
                 <h1>Oque Eu Faço?</h1>
                 <p>- Sou um desenvolvedor Front-End e Back-End. Também sou um analista de banco de dados.. </p>
             </div>
             <div class="Mi2">
-                <img src="../Imgs/mi2.png" alt="Ze Dio" style="width: 230px; border-radius: 74% 26% 75% 25% / 30% 86% 14% 70% ;">
+                <img src="../Imgs/MinhasFotos/mi2.png" alt="Ze Dio" style="width: 230px; border-radius: 74% 26% 75% 25% / 30% 86% 14% 70% ;">
             </div>
         </div>
         <div class="metade">
             <div class="organizar-2">
                 <h2>UI/UX Desing</h2>
-                <p>text</p>
+                <p>- Sou um desiner que preocupa com a experiência positiva e agradável para o usuário..</p>
+                <div class="bloquinho">
+                    <h3>Ler Mais</h3>
+                    <p>Em Manutenção</p>
+                </div>
             </div>
             <div class="organizar-2">
                 <h2>Digital Marketing</h2>
-                <p>text</p>
+                <p>- Faço propagandas digitais em diversas plataformas sobre o rpoduto ou empresa..</p>
+                <div class="bloquinho">
+                    <h3>Ler Mais</h3>
+                    <p>Em Manutenção</p>
+                </div>
             </div>
             <div class="organizar-2">
                 <h2>Progamador Full Stack</h2>
-                <p>text</p>
+                <p>- Sou um progamador Front-End e Back-End, desenvolvo aplicativos e websites..</p>
+                <div class="bloquinho-linguagens">
+                    <h3>Linguagens</h3>
+                    <p>-HTML</p>
+                    <P>-CSS</P>
+                    <p>-JAVA SCRIPT</p>
+                    <p>-LUA</p>
+                    <p>-SQL SEVER</p>
+                    <p>-MONGO DB</p>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="section3" id="Trabalhos">
+
+    </section>
+
+    <div class="header">
+        <a href="#Mi"><img src="../Imgs/Header/Pessoa.png" alt="#"></a>
+        <a href="#Informacoes"><img src="../Imgs/Header/Informacoes.png" alt="#"></a>
+        <a href="#Trabalhos"><img src="../Imgs/Header/trabalhos.png" alt="#"></a>
+    </div>
 
     <footer>
         <div class="wave wave1"></div>
@@ -259,13 +393,13 @@ footer{
         <div class="wave wave3"></div>
         <div class="wave wave4"></div>
 
-        <h1 class="h1 digitando">Ze Dio <small>Contato</small></h1>
+        <h1 class="h1 digitando-footer">Ze Dio <small>- Contato</small></h1>
         <div>
-            <a href="#"><img src="" alt="Instagram"></a>
-            <a href="#"><img src="" alt="Youtube"></a>
-            <a href="#"><img src="" alt="Linedin"></a>
-            <a href="#"><img src="" alt="GitHub"></a>
-            <a href="#"><img src="" alt="WhastzApp"></a>
+            <a href="https://www.instagram.com/ze.dio/"><img src="../Imgs/Footer/instagram.png" alt="Instagram" class="imgs-contato"></a>
+            <a href="https://www.youtube.com/channel/UCATFn2mjO1PlRFKs7QzD0ug"><img src="../Imgs/Footer/youtube.png" alt="Youtube" class="imgs-contato"></a>
+            <a href="https://www.linkedin.com/in/jos%C3%A9-d-33634b280"><img src="../Imgs/Footer/linkedin.png" alt="Linkedin" class="imgs-contato"></a>
+            <a href="https://github.com/ZeDio"><img src="../Imgs/Footer/github.png" alt="GitHub" class="imgs-contato"></a>
+            <a href="https://api.whatsapp.com/send?phone=5511975372267"><img src="../Imgs/Footer/whatsapp.png" alt="WhastzApp" class="imgs-contato"></a>
         </div>
     </footer>
     
