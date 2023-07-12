@@ -9,365 +9,6 @@
     <link rel="stylesheet" href="../Css/cssPeculiar.css">
     <link rel="stylesheet" href="../Css/cssGeral.css">
 </head>
-<style>
-html, body{
-    width: 100%;
-    height: 100%;
-    scroll-behavior: smooth;
-}
-body{
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    position: relative;
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.header{
-    width: 350px;
-    height: 75px;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    border-radius: 30px;
-    border: 3px solid white;
-    background: transparent;
-    backdrop-filter: blur(4px);
-    position: fixed;
-    top: 20px;
-}
-.header img{
-    width: 60px;
-    transition: 0.3s linear;
-}
-.header img:hover{
-    width: 65px;
-    filter: blur(2px);
-    filter: drop-shadow(6px 4px 6px white);
-}
-
-section{
-    width: 99%;
-    background-color: rgba(19,19,19,1);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.section1{
-    height: 99%;
-    margin-top: 0.5%;
-}
-.section2{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-    padding-top: 64px;
-}
-.section3{
-    padding-top: 64px;
-}
-
-.digitando{
-        color: rgb(255, 255, 255);
-        border-right: 2px solid rgb(255, 255, 255);
-        animation: pisca 0.5s infinite normal, digit 3s steps(15) 0.8s normal infinite;
-        white-space: nowrap;
-        overflow: hidden;
-        font-style: italic;
-}
-@keyframes digit {
-        0%{
-            width: 0;
-        }
-        50%{
-            width: 200px;
-        }
-        100%{
-            width: 0px;
-        }
-}
-@keyframes pisca {
-        fron{
-            border-right-color: rgb(255, 255, 255);
-        }
-        to{
-            border-right-color: transparent;
-        }
-}
-.Mi{
-    width: 350px;
-    height: 350px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(13,13,13);
-    background: linear-gradient(90deg, rgba(19,19,19,1) 2%, rgba(117,117,117,1) 52%, rgba(255,255,255,1) 100%);
-    border-radius: 75% 25% 72% 28% / 30% 51% 49% 70%;
-    filter: blur(0.2px);
-    transition: 0.5s linear;
-    margin: 20px;
-    animation: mi-animado 3s ease-in-out infinite;
-}
-.Mi:hover{
-    width: 340px;
-    height: 340px;
-}
-@keyframes mi-animado {
-    0%{
-        transform: translateX(-5px);
-        transform: translateY(-5px);
-    }
-    50%{
-        transform: translateX(5px);
-        transform: translateY(5px);
-    }
-    100%{
-        transform: translateX(-5px);
-        transform: translateY(-5px);
-    }
-}
-
-.text{
-    display: flex;
-    flex-direction: column;
-    width: 50vh;
-    display: flex;
-    justify-content: space-around ;
-}
-.titulo{
-    margin-bottom: 40px;
-}
-h1{
-    font-size: 48px;
-    font-weight: bolder;
-    font-style: italic;
-}
-small{
-    font-size: 8px;
-}
-p{
-    font-size: 16px;
-}
-
-.Mi2{
-    width: 255px;
-    height: 255px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: rgb(13,13,13);
-    background: linear-gradient(90deg, rgba(19,19,19,1) 2%, rgba(117,117,117,1) 52%, rgba(255,255,255,1) 100%);
-    border-radius: 74% 26% 75% 25% / 30% 86% 14% 70% ;
-    filter: blur(0.2px);
-    transition: 0.5s linear;
-    margin: 20px;
-    margin-top: 140px;
-    opacity: 0.3;
-    animation: mi-animado 10s ease-in-out infinite;
-}
-.Mi2:hover{
-    width: 245px;
-    height: 245px;
-}
-.metade{
-    width: 375px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    position: relative;
-    margin-bottom: 30px;
-}
-.metade-2{
-    width: 375px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    position: relative;
-}
-.organizar-2{
-    width: 100%;
-    height: 130px;
-    border-bottom: 1px solid rgb(255, 255, 255, 0.1);
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-h2{
-    font-size: 32px;
-    font-style: italic;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-p{
-    margin-left: 10px;
-}
-.bloquinho{
-    margin-top: 10px;
-    position: absolute;
-    right: 10px;
-    border-radius: 10px;
-    border: 3px solid white;
-    background: transparent;
-    backdrop-filter: blur(4px);
-    width: 110px;
-    height: 28px;
-    overflow: hidden;
-    transition: 0.3s ease-in-out;
-}
-.bloquinho:hover{
-    filter: drop-shadow(2px 2px 2px white);
-}
-.bloquinho:active{
-    height: 70px;
-}
-.bloquinho-linguagens{
-    margin-top: 10px;
-    position: absolute;
-    right: 10px;
-    border-radius: 10px;
-    border: 3px solid white;
-    background: transparent;
-    backdrop-filter: blur(4px);
-    width: 150px;
-    height: 28px;
-    overflow: hidden;
-    transition: 0.5s ease-in-out;
-}
-.bloquinho-linguagens:hover{
-    height: 160px;
-}
-h3{
-    font-size: 24px;
-    font-style: italic;
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.bloquinho p{
-    margin-bottom: 5px;
-}
-.bloquinho-linguagens p{
-    margin-bottom: 5px;
-}
-
-.Bloco{
-    width: 370px;
-    height: 250px;
-    border-radius: 20px;
-    border: 2px white solid;
-    padding: 5px;
-    background: url(../imgs/Fundinho.jpg);
-    position: relative;
-    backdrop-filter: blur(0.5px);
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-left: 15px;
-    margin-right: 15px;
-    overflow: hidden;
-}
-.Bloco-Especial{
-    border: none;
-    background: transparent;
-    backdrop-filter: blur(0px);
-}
-.Bloco .bloquinho{
-    width: 175px;
-    position: absolute;
-    bottom: 10px;
-}
-.Bloco .bloquinho:active{
-    height: 28px;
-}
-.Bloclo-img{
-    width: 350px;
-    transform:rotate(-10deg);
-    position: absolute;
-    border-radius: 15px;
-    bottom: -100px;
-    transition: 0.5s ease-in-out;
-}
-.Bloco:hover .Bloclo-img{
-    width: 400px;
-    transform:rotate(-5deg);
-}
-.Bloco-Text{
-    backdrop-filter: blur(4px);
-    background: rgb(19,19,19,0.2);
-    width: 90%;
-    height: 90%;
-    border: 15px;
-    position: absolute;
-    top: -300px;
-    left: -300px;
-    transition: 0.5s ease-in-out;
-    padding: 5px;
-}
-.Bloco:hover .Bloco-Text{
-    top: 15px;
-    left: 15px;
-}
-
-footer{
-    position: relative;
-    margin-bottom: 10px;
-    width: 100%;
-    height: 100px;
-    background-color: white;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
-    flex-wrap: wrap;
-}
-.h1{
-    color: rgba(19,19,19,1);
-}
-footer small{
-    font-size: 16px;
-}
-.imgs-contato{
-    width: 40px;
-    margin-left: 13.7px;
-    margin-right: 13.7px;
-    transition: 0.3s ease-in-out;
-}
-.imgs-contato:hover{
-    width: 45px;
-    filter: drop-shadow(4px 4px 4px black);
-}
-.digitando-footer{
-        color: rgba(19,19,19,1);
-        border-right: 2px solid rgba(19,19,19,1);
-        animation: pisca 0.5s infinite normal, digit-footer 3s steps(15) 0.8s normal infinite;
-        white-space: nowrap;
-        overflow: hidden;
-        font-style: italic;
-}
-@keyframes digit-footer {
-        0%{
-            width: 0;
-        }
-        50%{
-            width: 235px;
-        }
-        100%{
-            width: 0px;
-        }
-}
-</style>
 <body>
 
     <div class="fundo-bolha1"></div>
@@ -447,7 +88,7 @@ footer small{
                 <img src="../imgs/Trabalhos/PRIM.PNG" alt="Projeto PRIM" class="Bloclo-img">
                 <div class="Bloco-Text">
                     <h3>Projeto PRIM</h3>
-                    <p>- Foi um projeto criado com uma finalidade de ajudar pessoal mais velhas a evitar cair em golpes em websites</p>
+                    <p>- Foi um projeto criado com uma finalidade de ajudar pessoal mais velhas a evitar cair em golpes em websites..</p>
                     <a class="bloquinho" href="https://www.figma.com/file/xapnIbQP7RWqOpeJRBZFsC/Untitled?type=design&node-id=0%3A1&mode=design&t=4K2OVrU8VXA4RW8m-1">
                         <h3>Ver Projeto</h3>
                     </a>
@@ -455,11 +96,29 @@ footer small{
             </div>
         </div>
         <div class="metade">
-            <div class="Bloco">
-
+            <div class="Bloco Bloco-Direito">
+                <img src="../imgs/Trabalhos/Mega-Flores-1.PNG" alt="Projeto MegaFlores" class="Bloclo-img Bloclo-img-1">
+                <img src="../imgs/Trabalhos/Mega-Flores-2.PNG" alt="Projeto MegaFlores" class="Bloclo-img Bloclo-img-2">
+                <div class="Bloco-Text">
+                    <h3>Projeto MegaFlores</h3>
+                    <p>- Esse projeto consiste em simular uma loja de flores, aprendendo mais conhecimentos em JS, HTML, CSS, MONGO BD..</p>
+                    <a class="bloquinho bloquinho-especial" href="https://github.com/ZeDio/INW2MIA/tree/main/mega_flores">
+                        <h3>Ver Projeto</h3>
+                    </a>
+                    <a class="bloquinho" href="https://www.figma.com/file/JWXTK1Q1h3LJ2yst3E9LL9/Mega-Flores?type=design&node-id=1%3A2&mode=design&t=XzLZWOHK1XwZfsej-1">
+                        <h3>Ver Projeto</h3>
+                    </a>
+                </div>
             </div>
-            <div class="Bloco">
-
+            <div class="Bloco Bloco-Direito">
+                <img src="../imgs/Trabalhos/LoreNews.png" alt="Projeto LoreNews" class="Bloclo-img Bloclo-img-3">
+                <div class="Bloco-Text">
+                    <h3>Projeto LoreNews</h3>
+                    <p>- Foi um projeto aonde eu tive que criar um site de noticias sobre IA no FIGMA, aprendendo conhecimentos de Desing e aperfeiçoando..</p>
+                    <a class="bloquinho" href="https://www.figma.com/file/3LXtN84keSRbsCeWGOCmIw/Figma-AC?type=design&node-id=0%3A1&mode=design&t=L9WyHbCn7wh00BJJ-1">
+                        <h3>Ver Projeto</h3>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
