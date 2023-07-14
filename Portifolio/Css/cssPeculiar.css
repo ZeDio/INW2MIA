@@ -50,7 +50,7 @@
     }
 }
 
-.Mi, .Mi2, .header, .metade{
+.Mi, .Mi2{
     visibility: hidden;
 }
 
@@ -103,4 +103,22 @@
     100%{
         background-position-x: -1000px;
     }
+}
+
+.header{
+    width: 350px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 30px;
+    border: 3px solid white;
+    background: transparent;
+    backdrop-filter: blur(4px);
+    position: fixed;
+    top: 20px;
+}
+
+.header-projetos{
+    width: 100px;
 }
