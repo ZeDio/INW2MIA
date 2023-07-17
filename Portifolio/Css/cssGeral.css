@@ -218,11 +218,14 @@ p{
     overflow: hidden;
     transition: 0.3s ease-in-out;
 }
+.bloquinho img{
+    width: 100%;
+    height: 100%;
+}
 .bloquinho:hover{
     filter: drop-shadow(2px 2px 2px white);
-}
-.bloquinho:active{
-    height: 70px;
+    height: 160px;
+    width: 250px;
 }
 .bloquinho-linguagens{
     margin-top: 10px;
@@ -238,7 +241,7 @@ p{
     transition: 0.5s ease-in-out;
 }
 .bloquinho-linguagens:hover{
-    height: 160px;
+    width: 150px;
 }
 h3{
     font-size: 24px;
