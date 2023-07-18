@@ -256,6 +256,10 @@ h3{
 .bloquinho-linguagens p{
     margin-bottom: 5px;
 }
+.section3 .bloquinho:hover{
+    width: 175px;
+    height: 28px;
+}
 
 .Bloco{
     width: 370px;
