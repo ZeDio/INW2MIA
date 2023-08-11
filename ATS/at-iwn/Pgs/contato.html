@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="website icon" type="png" href="../imgs/Header/Pessoa.png">
     <link rel="stylesheet" href="../Css/geral.css">
-    <link rel="stylesheet" href="../Css/sobre.css">
+    <link rel="stylesheet" href="../Css/contato.css">
 </head>
 <body>
     
-    <header>
+    <header id="home">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-            <a class="navbar-brand" href="#"><img src="../Imgs/Logo.png" alt="Logo" class="Logo"></a>
-            <a class="navbar-brand" href="#">Visão Educada</a>
+            <a class="navbar-brand" href="#home"><img src="../Imgs/Icones/Logo.png" alt="Logo" class="Logo"></a>
+            <a class="navbar-brand" href="../Pgs/index.html">Visão Educada</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -35,8 +35,34 @@
     </header>
 
     <main>
-        <section class="section-text section1">
-          <h1>Contato</h1>
+        <section class="section-img section1">
+          <a href="#contato"><h1>Contato</h1></a>
+        </section>
+
+        <section class="section-text section2" id="contato">
+          <div class="contato">
+            <img src="../Imgs/Icones/Email.png" alt="Email">
+            <a class="text-contato" href="mailto:jose.diogo100407@gmail.com">
+              <h1>Email</h1>
+              <p>Tem alguma duvida?</p>
+            </a>
+          </div>
+
+          <div class="contato">
+            <img src="../Imgs/Icones/Telefone.png" alt="Telefone">
+            <a class="text-contato" href="tel:11975372267">
+              <h1>Telefone</h1>
+              <p>Você pode ligar a qualquer hora!</p>
+            </a>
+          </div>
+          
+          <div class="contato">
+            <img src="../Imgs/Icones/Whatsapp.png" alt="WhatsApp">
+            <a class="text-contato" href="https://api.whatsapp.com/send?phone=5511975372267">
+              <h1>WhatsApp</h1>
+              <p>Precisa de alguma ajuda agora?</p>
+            </a>
+          </div>
         </section>
     </main>
 
