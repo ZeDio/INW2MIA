@@ -38,10 +38,10 @@ html{
       display: flex;
       align-items: center;
       justify-content: center;
-      color: black;
+      color: white;
       font-weight: bolder;
       padding: 5px 15px 5px 15px;
-      border: 2px solid black;
+      border: 2px solid white;
       border-radius: 25px;
       max-width: 600px;
       margin: 40px;
@@ -49,6 +49,10 @@ html{
       backdrop-filter: blur(7px);
       animation: flutua 5s ease-in-out infinite;
       transition: 0.5s ease-in-out;
+  }
+  .btn{
+    color: black;
+    border: 2px solid black;
   }
   a:hover{
       text-decoration: none;
