@@ -7,6 +7,7 @@ const firebaseConfig = {
     messagingSenderId: "241069530695",
     appId: "1:241069530695:web:ce3dcda1e08d783eb9db62"
   }; 
+/*
 
   firebase.initializeApp(firebaseConfig);
 
@@ -28,3 +29,6 @@ const firebaseConfig = {
       console.error("Erro de autenticação: ", errorMessage)
     });
   });
+
+*/
+
