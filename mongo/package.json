@@ -4,7 +4,8 @@
   "description": "Primeito uso do mongose",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "nodemon ./index.js localhost 8000"
   },
   "repository": {
     "type": "git",
@@ -17,6 +18,10 @@
   },
   "homepage": "https://github.com/ZeDio/INW2MIA#readme",
   "dependencies": {
-    "mongoose": "^7.5.0"
-  }
+    "firebase": "^10.3.1",
+    "mongoose": "^7.5.0",
+    "mongose": "^0.0.2-security",
+    "nodemon": "^3.0.1"
+  },
+  "keywords": []
 }
