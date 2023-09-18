@@ -18,9 +18,10 @@
   },
   "homepage": "https://github.com/ZeDio/INW2MIA#readme",
   "dependencies": {
+    "csv-parser": "^3.0.0",
+    "fs": "^0.0.1-security",
     "mongoose": "^7.5.0",
     "nodemon": "^3.0.1"
   },
-  "keywords": [],
-  "devDependencies": {}
+  "keywords": []
 }

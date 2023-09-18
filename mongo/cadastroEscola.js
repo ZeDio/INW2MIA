@@ -17,6 +17,8 @@ db.once('open', function(){
     console.log("Estamos conectados ao mongoDB");
 })
 
+// criando uma collection dentro do MONGO DB
+
 const alunoSchema = new mongoose.Schema({
     matricula : String,
     turma : String,
@@ -24,30 +26,30 @@ const alunoSchema = new mongoose.Schema({
     idade : Number
 });
 
-const Aluno = mongoose.model('Aluno',alunoSchema)
+const Alunos = mongoose.model('Alunos',alunoSchema)
 
-const Gus = new Aluno({
+const Gus = new Alunos({
     matricula : 'rm14866',
     turma : '2 Mia',
     nome:'Gustavo',
     idade: 16,  
 });
 
-const Mat = new Aluno({
+const Mat = new Alunos({
     matricula : 'rm14541',
     turma : '2 Mia',
     nome:'Maetus',
     idade: 18,  
 });
 
-const Ant = new Aluno({
+const Ant = new Alunos({
     matricula : 'rm15676',
     turma : '2 Mia',
     nome:'Antonio',
     idade: 16,  
 });
 
-const JD = new Aluno({
+const JD = new Alunos({
     matricula : 'rm12195',
     turma : '2 Mia',
     nome:'José Diogo',
@@ -58,9 +60,3 @@ Gus.save()
 Mat.save()
 Ant.save()
 JD.save()
-
-Aluno.findOne({nome : 'Antonio', function (err, Aluno){
-    console.log(Aluno)    
-}})
-
-//arrumar
