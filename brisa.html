@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sla</title>
+    <style>
+        html, body{
+            width: 99%;
+            height: 99%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        body{
+            background-color: rgb(25, 25, 25);
+        }
+        .glass{
+            background-color: rgb(200, 200, 200, 0.4);
+            width: 420px;
+            height: 420px;
+            border-radius: 47%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .glass2{
+            width: 380px;
+            height: 380px;
+            border-radius: 47%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .liquido{
+            position: absolute;
+            bottom:-15px;
+            height: 220px;
+            width: 1000px;
+            border-radius: 0px 0px 150px 150px;
+            background-color: green;
+            border-radius: 0px 0px 280px 280px;
+            animation: rbg 8s linear infinite;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        .seg-liq{
+            width: 200px;
+            height: 10px;
+            margin-top: 10px;
+            border-radius: 20px;
+            background-color: rgb(2, 2, 2, 0.4);
+            animation: rbg-2 8s ease-in-out infinite;
+        }
+        @keyframes rbg {
+            0%{
+                background-color: green;
+                transform: rotate(5deg);
+            }
+            10%{
+                background-color: blue;
+                transform: rotate(10deg);
+            }
+            20%{
+                background-color: white;
+                transform: rotate(15deg);
+            }
+            30%{
+                background-color: black;
+                transform: rotate(10deg);
+            }
+            40%{
+                background-color: hotpink;
+                transform: rotate(5deg);
+            }
+            50%{
+                background-color: aqua;
+                transform: rotate(-5deg);
+            }
+            60%{
+                background-color: yellow;
+                transform: rotate(-10deg);
+            }
+            70%{
+                background-color: tomato;
+                transform: rotate(-15deg);
+            }
+            80%{
+                background-color: red;
+                transform: rotate(-10deg);
+            }
+            90%{
+                background-color: saddlebrown;
+                transform: rotate(-5deg);
+            }
+            100%{
+                background-color: chartreuse;
+                transform: rotate(0deg);
+            }
+        }
+        @keyframes rbg-2 {
+            0%{
+                width: 200px;
+                transform: rotate(0deg);
+            }
+            10%{
+                width: 180px;
+                transform: rotate(2deg);
+            }
+            20%{
+                width: 160px;
+                transform: rotate(2.5deg);
+            }
+            30%{
+                width: 180px;
+                background-color: rgb(200, 200, 200, 0.4);
+                transform: rotate(2deg);
+            }
+            40%{
+                width: 200px;
+                transform: rotate(1deg);
+            }
+            50%{
+                width: 200px;
+                transform: rotate(-1deg);
+            }
+            60%{
+                width: 180px;
+                transform: rotate(-2deg);
+            }
+            70%{
+                width: 160px;
+                transform: rotate(-2.5deg);
+            }
+            80%{
+                width: 180px;
+                transform: rotate(-2deg);
+            }
+            90%{
+                width: 200px;
+                transform: rotate(-1deg);
+            }
+            100%{
+                width: 190px;
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <center>
+        <div class="glass">
+            <div class="glass2">
+                <div class="liquido">
+                    <div class="seg-liq"></div>
+                </div>
+            </div>
+        </div>
+    </center>
+
+</body>
+</html>
